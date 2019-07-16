@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+ <div class="container">
+    
+    <h3>&nbsp;Based on Category</h3>  
+<div class="row" >
+    
+  <div class="col-sm-4">
+      
+    <div class="card" >
+        <div class="cards" *ngFor="let data of ArrayOfClientData"></div>
+        <img class="card-img-top" src="/assets/images/meeting room.jpeg" alt="Card image">
+        <h5 class="card-title"><b>&nbsp;Category</b>:{{ArrayOfClientData[0].category}}</h5>
+        <h5 class="card-title"><b>&nbsp;Space Name</b>:{{ArrayOfClientData[0].spacename}}</h5>
+        <h5 class="card-title"><b>&nbsp;Location</b>:{{ArrayOfClientData[0].location}}</h5>
+        <div class="button">
+          <button type="button" class="btn btn-sm btn-info">View</button>
+        </div> 
+    </div>
+
+  </div>
+
+  <div class="col-sm-4">
+      <div class="card">
+          <img class="card-img-top" src="/assets/images/training room.jpg" alt="Card image">
+          <h5 class="card-title"><b>&nbsp;Category</b>:{{ArrayOfClientData[1].category}}</h5>
+        <h5 class="card-title"><b>&nbsp;Space Name</b>:{{ArrayOfClientData[1].spacename}}</h5>
+        <h5 class="card-title"><b>&nbsp;Location</b>:{{ArrayOfClientData[1].location}}</h5>
+          <div class="button">
+            <button type="button" class="btn btn-sm btn-info">View</button>
+          </div>
+      </div>
+  
+    </div>
+
+    <div class="col-sm-4">
+        <div class="card">
+            <img class="card-img-top" src="/assets/images/private.jpeg" alt="Card image">
+            <h5 class="card-title"><b>&nbsp;Category</b>:{{ArrayOfClientData[2].category}}</h5>
+        <h5 class="card-title"><b>&nbsp;Space Name</b>:{{ArrayOfClientData[2].spacename}}</h5>
+        <h5 class="card-title"><b>&nbsp;Location</b>:{{ArrayOfClientData[2].location}}</h5>
+            <div class="button">
+              <button type="button" class="btn btn-sm btn-info">View</button>
+            </div>
+        </div>
+    
+      </div>
+
+
+<div class="container">
+
+    <div class="cards" *ngFor="let data of ArrayOfClientData"></div>
+  <div class="mid">
+    <h3>Based on Location</h3>
+      <div class="row">
+        
+          <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="/assets/images/hotdesk.jpg" alt="Card image">
+                <h5 class="card-title"><b>&nbsp;Category</b>:{{ArrayOfClientData[3].category}}</h5>
+                <h5 class="card-title"><b>&nbsp;Space Name</b>:{{ArrayOfClientData[3].spacename}}</h5>
+                <h5 class="card-title"><b>&nbsp;Location</b>:{{ArrayOfClientData[3].location}}</h5>
+                <div class="button">
+                  <button type="button" class="btn btn-sm btn-info">View</button>
+                </div> 
+            </div>
+        
+          </div>
+        
+          <div class="col-sm-4">
+              <div class="card">
+                  <img class="card-img-top" src="/assets/images/event space.jpg" alt="Card image">
+                  <h5 class="card-title"><b>&nbsp;Category</b>:{{ArrayOfClientData[4].category}}</h5>
+                <h5 class="card-title"><b>&nbsp;Space Name</b>:{{ArrayOfClientData[4].spacename}}</h5>
+                <h5 class="card-title"><b>&nbsp;Location</b>:{{ArrayOfClientData[4].location}}</h5>
+                  <div class="button">
+                    <button type="button" class="btn btn-sm btn-info">View</button>
+                  </div>
+              </div>
+          
+            </div>
+        
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="/assets/images/event.jpeg" alt="Card image">
+                    <h5 class="card-title"><b>&nbsp;Category</b>:{{ArrayOfClientData[5].category}}</h5>
+                <h5 class="card-title"><b>&nbsp;Space Name</b>:{{ArrayOfClientData[5].spacename}}</h5>
+                <h5 class="card-title"><b>&nbsp;Location</b>:{{ArrayOfClientData[5].location}}</h5>
+                    <div class="button">
+                      <button type="button" class="btn btn-sm btn-info">View</button>
+                    </div>
+                </div>
+            
+              </div>
+  </div>
+  </div>
+
+</div>
+ 
