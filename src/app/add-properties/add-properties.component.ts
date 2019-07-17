@@ -12,6 +12,7 @@ export class AddPropertiesComponent implements OnInit {
 
   title = 'materialApp';   
   firstFormGroup: FormGroup;
+  categoryFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
   panelOpenState = false;
@@ -35,13 +36,22 @@ export class AddPropertiesComponent implements OnInit {
      //  PriceCtrl: ['', Validators.required]
 
      HeightCtrl: ['', Validators.required],
-     WidthCtrl: ['', Validators.required],
-     HourCtrl: ['', Validators.required],
-     DailyCtrl: ['', Validators.required],
-     MonthlyCtrl: ['', Validators.required],
-     CapacityCtrl: ['', Validators.required]
+     WidthCtrl: ['', Validators.required]
+   
 
      });
+
+     this.categoryFormGroup = this._formBuilder.group({
+      HourCtrl: ['', Validators.required],
+      DailyCtrl: ['', Validators.required],
+      MonthlyCtrl: ['', Validators.required],
+      CapacityCtrl: ['', Validators.required]
+   });
+
+
+
+
+
      this.secondFormGroup = this._formBuilder.group({
         NumberCtrl: ['', Validators.required],
         AreaCtrl: ['', Validators.required],
@@ -71,10 +81,10 @@ export class AddPropertiesComponent implements OnInit {
   addToSpaces(type) {
     let space = {
           type: type,
-          w:this.firstFormGroup.controls. CapacityCtrl.value,
-          x: this.firstFormGroup.controls.HourCtrl.value,
-          y: this.firstFormGroup.controls. DailyCtrl.value,
-          z:this.firstFormGroup.controls.MonthlyCtrl.value
+          w:this.categoryFormGroup.controls. CapacityCtrl.value,
+          x: this.categoryFormGroup.controls.HourCtrl.value,
+          y: this.categoryFormGroup.controls. DailyCtrl.value,
+          z:this.categoryFormGroup.controls.MonthlyCtrl.value
        
     }
     this.allSpaces.push(space);

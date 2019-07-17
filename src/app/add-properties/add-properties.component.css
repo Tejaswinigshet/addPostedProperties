@@ -87,7 +87,7 @@ input.ng-pristine.ng-invalid.ng-touched {
 
 .mat-horizontal-content-container {
     overflow: hidden;
-    padding: 0 24px 24px 24px;
+    padding: 4px 24px 28px 24px;
 }
 
 mat-form-field {
@@ -234,3 +234,26 @@ mat-expansion-panel-header {
     background: #19181891;
     color: #fff;
 }
+
+.mat-card {
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+    display: block;
+    /* position: unset; */
+    margin-left: 29px;
+    background: #580e28;
+    margin-top: 20px;
+}
+
+
+/* .next {
+    margin-bottom: 21.3%;
+} */
+
+
+/* .mat-raised-button {
+    color: rgba(239, 231, 231, 0.87);
+    background-color: #346e78;
+    font-size: medium;
+    font-weight: 400;
+    margin-top: 19%;
+} */
